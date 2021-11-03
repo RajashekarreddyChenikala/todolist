@@ -21,11 +21,7 @@ const App=()=> {
       setTodos(newTodos);
     }
     
-    const markTodo = (index) => {
-      const newTodos = [...todos];
-      
-      setTodos(newTodos);
-    };
+    
   
   return (
     <div>
@@ -37,7 +33,7 @@ const App=()=> {
               <input size="35" type="text" name="task" value={task} onChange={changeHandler} placeholder="Enter ToDo"/> &nbsp;&nbsp;
               <input type="submit" value="Add" name="Add"/>
             </form>
-            <ToDoList todolist={todos} deleteHandler={deleteHandler} markTodo={markTodo}/>
+            <ToDoList todolist={todos} deleteHandler={deleteHandler}/>
              
           </div>
         </div>
